@@ -1,0 +1,16 @@
+public class ganjil {
+  public static void main(String[] args){
+   
+  int i, n=0;
+  System.out.print("Bilangan Ganjil = ");
+
+    for(i=1; i<=100 ; i++ ){
+    if (i%2!=0){
+    System.out.print(i+", ");
+    n++;
+ }
+  }
+   System.out.println("Total bilangan ganjil adalah "+n);
+}
+}
+
