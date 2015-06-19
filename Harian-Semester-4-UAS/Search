@@ -1,0 +1,23 @@
+public class Search {
+  public static int cariseq(int []data, int kunci){
+    int i=0;
+    int idx=-1;
+    do{
+      System.out.println("i="+i + ": "+data[i]+ "==" + "kunci+">"+"(data[i]==kunci));
+      if(data[]==kunci)
+        idx = 1;
+      i++;
+    }while((i<data.length)&&(idx==-1));
+    return idx;
+    
+  }
+  public static void main(String[] argx){
+    int [] data = (12,22,4,9,6,10,8);
+    int cari = 12;
+    int idx = cariseq(data,cari);
+    if(idx==-1)
+      System.out.println("Data tidak ditemukan");
+    else
+      System.out.println("Angka " + cari +" Pada Index : " +);
+     }
+}
