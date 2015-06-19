@@ -1,0 +1,41 @@
+import java.io.*;
+public class hapusdata{
+public static void main(String[] args){
+BufferedReader bilangan=new BufferedReader(new InputStreamReader(System.in));
+try{
+int size=0;
+int[] arr = new int[5];
+int i;
+size = 6;
+System.out.println("masukkan 6 buah angka");
+System.out.println("=====================");
+for (int j = 0; j < size; j++){
+System.out.print("masukkan data ke "+j+"=");
+arr[j]=Integer.parseInt(bilangan.readLine());
+}
+
+System.out.print("masukkan angka yang ingin dihapus : ");
+int cari=Integer.parseInt(bilangan.readLine());
+System.out.println();
+
+  System.out.println("data angka awal");
+  for(int d = 0; d < size; d++)
+System.out.print(arr[d]+" ");
+
+  System.out.println();
+  System.out.println();
+   
+  System.out.println("data angka setelah dihapus");
+  for(i = 0; i < size; i++){
+        if(cari == arr[i]){
+   arr[i]=0;
+}
+else{
+System.out.print(arr[i]+" ");}
+}
+  
+  }
+  
+catch(Exception e){
+System.out.println("salah");
+        }}}
